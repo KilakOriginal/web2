@@ -11,6 +11,7 @@ import {
     Link,
 } from "react-router-dom"
 import { Home } from "@/pages/Home"
+import { paths } from "@/utils"
 
 export function Navbar() {
     return (
@@ -18,7 +19,7 @@ export function Navbar() {
             <NavigationMenu className="fixed top-5 left-10 w-full">
                 <NavigationMenuList>
                     <NavigationMenuItem>
-                        <Link to="/">
+                        <Link to={paths.Home}>
                             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                 Home
                             </NavigationMenuLink>
@@ -28,7 +29,7 @@ export function Navbar() {
             </NavigationMenu>
 
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path={paths.Home} element={<Home />} />
             </Routes>
         </div>
     );

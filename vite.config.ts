@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import { paths } from './src/utils'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -11,5 +12,5 @@ export default defineConfig({
     },
   },
   plugins: [react(), tailwindcss()],
-  base: '/',
+  base: paths.Home,
 })
