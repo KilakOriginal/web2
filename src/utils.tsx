@@ -1,4 +1,4 @@
-export const basePath: string = "/web2/"
+export const basePath: string = import.meta.env.VITE_BASE_PATH || '/'
 
 import { Home } from "@/pages/Home"
 import { Quotes } from "@/pages/Quotes"
