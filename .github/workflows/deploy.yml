@@ -14,20 +14,17 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node and Install dependencies
         uses: actions/setup-node@v3
-
-      - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        with:
+          node-version: '16'
+          cache: 'npm'
 
       - name: Load .env variables
-        id: load-env
         run: |
-          echo "Loading .env variables..."
-          export $(grep -v '^#' .env | xargs -d '\n') && \
-          for var in $(grep -v '^#' .env | cut -d= -f1); do
-            echo "$var=${!var}" >> $GITHUB_ENV
-          done
+          set -a
+          source .env
+          set +a
 
       - name: Build project
         run: npm run build
@@ -42,7 +39,6 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
 
     steps:
       - name: Download artifact
