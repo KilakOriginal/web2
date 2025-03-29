@@ -20,17 +20,10 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Load .env variables
-        id: load-env
-        run: |
-          echo "Loading .env variables..."
-          export $(grep -v '^#' .env | xargs -d '\n') && \
-          for var in $(grep -v '^#' .env | cut -d= -f1); do
-            echo "$var=${!var}" >> $GITHUB_ENV
-          done
-
       - name: Build project
         run: npm run build
+        env:
+          VITE_BASE_PATH: /web2/
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
