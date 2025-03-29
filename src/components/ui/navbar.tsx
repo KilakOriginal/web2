@@ -10,26 +10,32 @@ import {
     Route,
     Link,
 } from "react-router-dom"
-import { Home } from "@/pages/Home"
-import { paths } from "@/utils"
+import { 
+    routesConfig,
+    RouteConfig,
+} from "@/utils"
 
 export function Navbar() {
     return (
         <div>
             <NavigationMenu className="fixed top-5 left-10 w-full">
                 <NavigationMenuList>
-                    <NavigationMenuItem>
-                        <Link to={paths.Home}>
-                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                Home
-                            </NavigationMenuLink>
-                        </Link>
-                    </NavigationMenuItem>
+                    {routesConfig.map(({ path, label }: RouteConfig) => (
+                        <NavigationMenuItem key={path}>
+                            <Link to={path}>
+                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                    {label}
+                                </NavigationMenuLink>
+                            </Link>
+                        </NavigationMenuItem>
+                    ))}
                 </NavigationMenuList>
             </NavigationMenu>
 
             <Routes>
-                <Route path={paths.Home} element={<Home />} />
+                {routesConfig.map(({ path, component: Component }: RouteConfig) => (
+                    <Route key={path} path={path} element={<Component />} />
+                ))}
             </Routes>
         </div>
     );
