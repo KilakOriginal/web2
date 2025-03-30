@@ -1,10 +1,21 @@
 @font-face {
   font-family: Roboto;
-  src: url("../src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("@/assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
 }
 @font-face {
   font-family: Roboto-Bold;
-  src: url("../src/assets/fonts/Roboto-Bold.ttf") format("truetype");
+  src: url("@/assets/fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Mozaic;
+  src: url("@/assets/fonts/Mozaic.otf") format("opentype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Mozaic-Bold;
+  src: url("@/assets/fonts/Mozaic-Bold.otf") format("opentype");
   font-weight: bold;
 }
 
@@ -23,10 +34,12 @@
 @theme {
   --font-roboto: Roboto, sans-serif;
   --font-roboto-bold: Roboto-Bold, sans-serif;
+  --font-mozaic: Mozaic, sans-serif;
+  --font-mozaic-bold: Mozaic-Bold, sans-serif;
 }
 
 :root {
-  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Mozaic, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -84,15 +97,32 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  text-align: justify;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-  font-family: Roboto-Bold, sans-serif;
+  font-family: Mozaic-Bold, sans-serif;
+}
+
+h2 {
+  font-size: 2.0em;
+  line-height: 1.2;
+  font-family: Mozaic-Bold, sans-serif;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-family: Mozaic, sans-serif;
+  margin: 0.5em 0;
+}
+
+h1, h2, p {
+  text-align: justify;
 }
 
 button {
@@ -206,4 +236,57 @@ button:focus-visible {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.navigation-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1000;
+  padding: 0.5rem;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px dashed #eeeeee;
+}
+
+.navigation-menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.navigation-menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  font-size: 1.0em;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation-menu-link:hover {
+  background-color: rgba(230, 230, 230, 0.90);
+  color: #424242;
+}
+
+.navigation-menu-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  gap: 1rem;
+}
+
+.navigation-menu-right img {
+  height: 1.4rem;
+  width: 1.4rem;
+  max-width: 5vh;
+  max-height: 5vh;
+  object-fit: contain;
 }

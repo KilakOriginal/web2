@@ -3,7 +3,6 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuItem,
-    navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import {
     Routes,
@@ -14,22 +13,40 @@ import {
     routesConfig,
     RouteConfig,
 } from "@/utils"
+import githubLogo from "@/assets/logos/github/black.svg";
+import linkedinLogo from "@/assets/logos/linkedin/black.svg";
+
+function iconLink(link: string, icon: string) {
+    return (
+        <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <img src={icon} alt="Icon" />
+        </a>
+    );
+}
 
 export function Navbar() {
     return (
         <div>
-            <NavigationMenu className="fixed top-5 left-10 w-full">
-                <NavigationMenuList>
+            <NavigationMenu className="navigation-menu">
+                <NavigationMenuList className="navigation-menu-list">
                     {routesConfig.map(({ path, label }: RouteConfig) => (
                         <NavigationMenuItem key={path}>
                             <Link to={path}>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink className="navigation-menu-link">
                                     {label}
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                     ))}
                 </NavigationMenuList>
+                <div className="navigation-menu-right">
+                    {iconLink("https://github.com/KilakOriginal/", githubLogo)}
+                    {iconLink("https://www.linkedin.com/in/abdul-malik-abdoul-hamidou-a41a3423a/", linkedinLogo)}
+                </div>
             </NavigationMenu>
 
             <Routes>
