@@ -10,7 +10,7 @@
 }
 @font-face {
   font-family: Mozaic;
-  src: url("@/assets/fonts/Mozaic.otf") format("opentype");
+  src: url("@/assets/fonts/Mozaic-Regular.otf") format("opentype");
   font-weight: normal;
 }
 @font-face {
