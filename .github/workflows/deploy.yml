@@ -14,11 +14,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Setup Node and Install dependencies
+      - name: Setup Node
         uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'npm'
+
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
 
       - name: Load .env variables
         run: |
