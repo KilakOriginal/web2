@@ -115,7 +115,7 @@ h2 {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.5;
   font-family: Mozaic, sans-serif;
   margin: 0.5em 0;
@@ -123,6 +123,13 @@ p {
 
 h1, h2, p {
   text-align: justify;
+}
+
+.newspaper {
+  column-count: 2;
+  column-gap: 2em;
+  column-rule: 1px dashed #eeeeee;
+  padding: 1em;
 }
 
 button {
@@ -289,4 +296,41 @@ button:focus-visible {
   max-width: 5vh;
   max-height: 5vh;
   object-fit: contain;
+}
+
+.profile-card {
+  position: relative;
+  max-width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.profile-card-header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card-title{
+  font-size: 1.6em;
+}
+
+.profile-card-description {
+  font-size: 1.2em;
+}
+
+.profile-card-avatar {
+  flex-shrink: 0;
+  width: 4rem;
+  height: 4rem;
+}
+
+.profile-card-content {
+  font-size: 1.1em;
 }
