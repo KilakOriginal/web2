@@ -26,14 +26,16 @@ export class Quote {
     }
 }
 
-export const loadQuotes = async (jsonPath: string): Promise<Quote[]> => {
-    const response = await fetch(jsonPath);
-    if (!response.ok) {
-        throw new Error(`Failed to fetch quotes: ${response.statusText}`);
+export async function loadQuotes(filePath: string): Promise<Quote[]> {
+    try {
+        console.log("Fetching quotes from:", filePath);
+        const response = await fetch(filePath);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch quotes: ${response.status} ${response.statusText}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("Error loading quotes:", error);
+        throw error;
     }
-    
-    const data = await response.json();
-    return data.map((quoteData: any) => {
-        return new Quote(quoteData.quote, quoteData.language, quoteData.author, quoteData.tags);
-    }); 
 }
