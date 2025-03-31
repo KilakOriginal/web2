@@ -287,6 +287,10 @@ button:focus-visible {
   color: var(--text-color-hover);
 }
 
+.navigation-menu-list {
+  width: 50vw;
+}
+
 .navigation-menu-right {
   gap: 1rem;
 }
