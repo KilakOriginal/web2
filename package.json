@@ -1,12 +1,12 @@
 {
   "name": "abdoulhamidou-website",
-  "homepage": "https://abdoulhamidou.com",
+  "homepage": "https://www.abdoulhamidou.com",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build --mode production && echo 'abdoulhamidou.com' > ./dist/CNAME && cp ./dist/index.html ./dist/404.html",
+    "build": "tsc -b && vite build --mode production && echo 'www.abdoulhamidou.com' > ./dist/CNAME && cp ./dist/index.html ./dist/404.html",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest run",
