@@ -83,6 +83,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --foreground-muted: #666666;
+  --text-color-hover: #424242;
+  --border-color: #dddddd;
+  --button-background-hover: rgba(230, 230, 230, 0.90);
+  --background-navbar: rgba(255, 255, 255, 0.6);
 }
 
 a {
@@ -128,7 +134,7 @@ h1, h2, p {
 .newspaper {
   column-count: 2;
   column-gap: 2em;
-  column-rule: 1px dashed #eeeeee;
+  column-rule: 1px dashed var(--border-color);
   padding: 1em;
 }
 
@@ -196,6 +202,12 @@ button:focus-visible {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  --foreground-muted: #aaaaaa;
+  --text-color-hover: #dedede;
+  --border-color: #333333;
+  --button-background-hover: rgba(40, 40, 40, 0.90);
+  --background-navbar: rgba(10, 10, 10, 0.6);
 }
 
 @theme inline {
@@ -251,11 +263,11 @@ button:focus-visible {
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
-  background-color: rgba(255, 255, 255, 0.6);
+  background: var(--background-navbar);
   z-index: 1000;
   padding: 0.5rem;
   backdrop-filter: blur(8px);
-  border-bottom: 1px dashed #eeeeee;
+  border-bottom: 1px dashed var(--border-color);
 }
 
 .navigation-menu-list {
@@ -272,14 +284,14 @@ button:focus-visible {
   padding: 0.3rem 0.8rem;
   font-size: 1.0em;
   font-weight: 500;
-  color: #1a1a1a;
+  color: var(--foreground);
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .navigation-menu-link:hover {
-  background-color: rgba(230, 230, 230, 0.90);
-  color: #424242;
+  background-color: var(--button-background-hover);
+  color: var(--text-color-hover);
 }
 
 .navigation-menu-right {
@@ -290,12 +302,17 @@ button:focus-visible {
   gap: 1rem;
 }
 
-.navigation-menu-right img {
+.icon-link {
+  color: var(--foreground);
   height: 1.4rem;
   width: 1.4rem;
   max-width: 5vh;
   max-height: 5vh;
   object-fit: contain;
+}
+
+.icon-link:hover {
+  color: inherit;
 }
 
 .profile-card {
