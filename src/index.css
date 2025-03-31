@@ -258,11 +258,14 @@ button:focus-visible {
 }
 
 .navigation-menu {
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
+  left: 0;
+  width: 100%;
   background: var(--background-navbar);
   z-index: 1000;
   padding: 0.5rem;
@@ -270,17 +273,7 @@ button:focus-visible {
   border-bottom: 1px dashed var(--border-color);
 }
 
-.navigation-menu-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50vw;
-}
-
 .navigation-menu-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0.3rem 0.8rem;
   font-size: 1.0em;
   font-weight: 500;
@@ -295,11 +288,15 @@ button:focus-visible {
 }
 
 .navigation-menu-right {
+  gap: 1rem;
+}
+
+.navigation-menu-list,
+.navigation-menu-right {
+  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50vw;
-  gap: 1rem;
 }
 
 .icon-link {
@@ -317,6 +314,7 @@ button:focus-visible {
 
 .profile-card {
   position: relative;
+  width: 80vw;
   max-width: 800px;
   left: 50%;
   transform: translateX(-50%);
