@@ -139,12 +139,14 @@ h1, h2, p {
   text-align: justify;
 }
 
-.newspaper {
-  column-count: 2;
-  column-gap: 2em;
-  column-rule: 1px dashed var(--border-color);
-  padding: 1em;
-  max-width: 98vw;
+@media (min-width: 1000px) {
+    .newspaper {
+      column-count: 2;
+      column-gap: 2em;
+      column-rule: 1px dashed var(--border-color);
+      padding: 1em;
+      max-width: 98vw;
+    }
 }
 
 button {
