@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
 
 function jsxLink(link: string, Element: any) {
     return (
@@ -32,10 +33,11 @@ function jsxLink(link: string, Element: any) {
     );
 }
 
-export function Navbar() {
+export const Navbar = () => {
     const [theme, setTheme] = useState(
         localStorage.getItem("theme") || "light"
     );
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         if (theme === "dark") {
@@ -43,13 +45,17 @@ export function Navbar() {
         } else {
           document.documentElement.classList.remove("dark");
         }
-        localStorage.setItem("theme", theme);
-      }, [theme]);
+        localStorage.setItem("theme", theme);<FontAwesomeIcon icon={mobileMenuOpen ? faXmark : faBars} />
+      }, [theme, mobileMenuOpen]);
+
+      const toggleMobileMenu = () => {
+        setMobileMenuOpen(!mobileMenuOpen);
+      };
 
     return (
         <div>
             <NavigationMenu className="navigation-menu">
-                <NavigationMenuList className="navigation-menu-list">
+                <NavigationMenuList className={`navigation-menu-list ${mobileMenuOpen ? 'is-active' : ''}`}>
                     {routesConfig.map(({ path, label }: RouteConfig) => (
                         <NavigationMenuItem key={path}>
                             <Link to={path}>
@@ -60,6 +66,23 @@ export function Navbar() {
                         </NavigationMenuItem>
                     ))}
                 </NavigationMenuList>
+
+                <div className="navigation-menu-mobile">
+                    <Button
+                        onClick={toggleMobileMenu}
+                        style={{
+                            all: "unset",
+                            display: "inline-flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            cursor: "pointer",
+                        }}
+                        className="navbar-burger"
+                    >
+                        <FontAwesomeIcon icon={mobileMenuOpen ? faXmark : faBars} />
+                    </Button>
+                </div>
+
                 <div className="navigation-menu-right">
                     {jsxLink("https://github.com/KilakOriginal/", <FontAwesomeIcon icon={faGithub} />)}
                     {jsxLink("https://www.linkedin.com/in/abdul-malik-abdoul-hamidou-a41a3423a/", <FontAwesomeIcon icon={faLinkedin} />)}
