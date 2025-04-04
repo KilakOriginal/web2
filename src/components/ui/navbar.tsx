@@ -58,7 +58,7 @@ export const Navbar = () => {
                 <NavigationMenuList className={`navigation-menu-list ${mobileMenuOpen ? 'is-active' : ''}`}>
                     {routesConfig.map(({ path, label }: RouteConfig) => (
                         <NavigationMenuItem key={path}>
-                            <Link to={path}>
+                            <Link to={path} onClick={() => setMobileMenuOpen(false)}>
                                 <NavigationMenuLink className="navigation-menu-link">
                                     {label}
                                 </NavigationMenuLink>
