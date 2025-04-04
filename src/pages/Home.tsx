@@ -23,6 +23,7 @@ export function Home() {
                   Music is a huge part of who I am, and I love connecting with others who share that passion. If you're interested in working together, exchanging ideas, or just want to chat about music, feel free to reach out!
                   <a href="mailto:malik@abdoulhamidou.com" className="ml-2 text-blue-600 underline"><FontAwesomeIcon icon={faEnvelope} /> malik@abdoulhamidou.com</a>
                 </p>
+                <br />
 
                 <h1 className="text-3xl mb-2">Software Engineering</h1>
                 <p className="mb-6">
@@ -32,6 +33,7 @@ export function Home() {
                   <br /><br />
                   Whether it's building cross-platform applications, designing efficient algorithms, or working with databases, I enjoy turning ideas into practical, scalable solutions. I'm always eager to learn, take on new challenges, and connect with others in the tech community to share ideas and grow together.
                 </p>
+                <br />
 
                 <h1 className="text-3xl mb-2">Close-Up Magic</h1>
                 <p className="mb-6">
@@ -41,6 +43,7 @@ export function Home() {
                   <br /><br />
                   If you're interested in chatting about magic, learning a trick or two, or want me to perform at your event, feel free to reach out!
                 </p>
+                <br />
 
                 <h1 className="text-3xl mb-2">Design</h1>
                 <p className="mb-6">
