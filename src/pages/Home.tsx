@@ -7,7 +7,7 @@ export function Home() {
     return (
         <div className="p-10">
             {ProfileCard(
-                <p>Hello and welcome to my website! I'm Malik - a computer science student and musician from Kronshagen and the co-founder of the <a href="https://die-mint.party/">MINT-Party</a>. If you’d like to support my work, please consider making a small donation by clicking <a href="https://www.paypal.com/paypalme/MalikAbdoulHamidou/1">this link</a>.</p>,
+                <p>Hello and welcome to my website! I'm Malik—a computer science student and musician from Kronshagen and the co-founder of the <a href="https://die-mint.party/">MINT-Party</a>. If you’d like to support my work, please consider making a small donation by clicking <a href="https://www.paypal.com/paypalme/MalikAbdoulHamidou/1">this link</a>.</p>,
                 "Malik Abdoul Hamidou",
                 profilePicture,
                 "Computer Scientist, Musician"
