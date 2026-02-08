@@ -43,10 +43,10 @@ export function Home() {
                 <p className="mb-6">
                   If you know me, you probably know I love photography. Capturing moments, 
                   emotions, and the beauty of the world around us is one thing and if you 
-                  need an event of portrait photographer, I'd be happy to help out! However,
+                  need an event or portrait photographer, I'd be happy to help out! However,
                   creating art through my camera is what truly drives me.
                   <br /><br />
-                  I enjoy experimenting with different compositins, lighting, and 
+                  I enjoy experimenting with different compositions, lighting, and 
                   perspectives to tell stories instead of just taking pictures. 
                   If you're interested in discussing photography, collaborating on projects, 
                   or just need someone to go around and create art with, please don't 

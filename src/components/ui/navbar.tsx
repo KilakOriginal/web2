@@ -34,6 +34,10 @@ function jsxLink(link: string, Element: any) {
 }
 
 export const Navbar = () => {
+    if (window.matchMedia && window.matchMedia('(prefers-color-sheme: dark)').matches) {
+        localStorage.setItem("theme", "dark");
+    }
+    
     const [theme, setTheme] = useState(
         localStorage.getItem("theme") || "light"
     );
