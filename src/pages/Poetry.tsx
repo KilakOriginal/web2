@@ -159,7 +159,7 @@ export function Poetry() {
                 We found solace and warmth and peace.<br /><br />
 
                 Then when fire claimed the land,<br />
-                And villages turned into fine gray sand,<br />
+                And villages turned into fine grey sand,<br />
                 In the inferno's cruel embrace,<br />
                 Your stone cold body lay.<br />
                 Yes, your tender frame disgraced.<br /><br />
