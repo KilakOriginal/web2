@@ -114,7 +114,7 @@ export function Poetry() {
                 You chase away my direst troubles<br />
                 Do it in the way you smile<br /><br />
 
-                If not a bird you must surely be—<br />
+                If not, a bird you must surely be—<br />
                 Inspiring me with jauntiness<br />
                 Singing in the sweetest voice<br />
                 Of love, and peace, and happiness
