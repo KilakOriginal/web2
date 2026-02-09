@@ -43,7 +43,7 @@ export function Poetry() {
                 I lie here in this small dark room<br />
                 Seeking shelter in a warm cocoon<br />
                 The drizzling rain my only song<br />
-                Mocking and teasing me all night long<br /><br />
+                Mocking me all night long<br /><br />
 
                 I challenge now the raging sea<br />
                 Its wrathful waves consume me<br />
@@ -63,7 +63,7 @@ export function Poetry() {
                 Blackness now envelops me<br />
                 No melody, no sound I hear<br />
                 Still I sense that you are near<br />
-                Let me taste some of your glee!<br /><br />
+                Let me drown inside your glee!<br /><br />
 
                 I come upon a waning lake<br />
                 My withered heart begins to wake<br />
