@@ -5,6 +5,8 @@ export function Poetry() {
             <p className="mb-6">
                 An incomplete collection of some of my poems and song lyrics, written over the years. May they inspire you or serve as a source of comfort or reflection.
             </p>
+
+            <br /><br /><br />
             <h3 className="text-3xl mb-4" style={{ textAlign: "left" }}>A Mariner's Farewell</h3>
             <p className="mb-6">
                 My frame upon this stony beach<br />
