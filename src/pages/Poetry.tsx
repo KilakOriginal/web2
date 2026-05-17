@@ -112,7 +112,7 @@ export function Poetry() {
                 And my spirit may roam free<br /><br />
 
                 Or perhaps you are an angel—<br />
-                For such a face I've never seen<br />
+                For such a smile I've never seen<br />
                 You chase away my direst troubles<br />
                 Do it in the way you smile<br /><br />
 
