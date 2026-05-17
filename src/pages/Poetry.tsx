@@ -7,34 +7,6 @@ export function Poetry() {
             </p>
 
             <br /><br /><br />
-            <h3 className="text-3xl mb-4" style={{ textAlign: "left" }}>A Mariner's Farewell</h3>
-            <p className="mb-6">
-                She placed me on this stony beach<br />
-                Where blades of oceanic steel<br />
-                Cut deep into my tender flesh<br />
-                Releasing streams of crimson nectar<br />
-                To sate their fickle mistress' hunger<br /><br />
-
-                Her winged heralds—grey and white<br />
-                Circle me all day, all night<br />
-                A choir of doom, wheeling, crying<br />
-                They bid me drop my guard and yield<br />
-                To her o' so cold embrace<br /><br />
-
-                Now her hoary glacial voice<br />
-                Creeps into each sacred thought<br />
-                And with the anguish of her suitors<br />
-                Sacrificed in centuries past<br />
-                My mind is twisted—torn apart<br /><br />
-
-                As my vision starts to fade<br />
-                My chest weighed down with gloom and grief<br /> 
-                A fleeting heartbeat—then release!<br />
-                A white dove from the clouds emerging<br />
-                Sings me to eternal peace
-            </p>
-
-            <br /><br /><br />
             <h3 className="text-3xl mb-4" style={{ textAlign: "left" }}>Lullaby</h3>
             <p className="mb-6">
                 I stand upon an icy crest<br />
@@ -74,6 +46,34 @@ export function Poetry() {
 
                 And is it me or is that you?<br />
                 Oh stranger tell me—who are you?
+            </p>
+
+            <br /><br /><br />
+            <h3 className="text-3xl mb-4" style={{ textAlign: "left" }}>A Mariner's Farewell</h3>
+            <p className="mb-6">
+                She placed me on this stony beach<br />
+                Where blades of oceanic steel<br />
+                Cut deep into my tender flesh<br />
+                Releasing streams of crimson nectar<br />
+                To sate their fickle mistress' hunger<br /><br />
+
+                Her winged heralds—grey and white<br />
+                Circle me all day, all night<br />
+                A choir of doom, wheeling, crying<br />
+                They bid me drop my guard and yield<br />
+                To her o' so cold embrace<br /><br />
+
+                Now her hoary glacial voice<br />
+                Creeps into each sacred thought<br />
+                And with the anguish of her suitors<br />
+                Sacrificed in centuries past<br />
+                My mind is twisted—torn apart<br /><br />
+
+                As my vision starts to fade<br />
+                My chest weighed down with gloom and grief<br /> 
+                A fleeting heartbeat—then release!<br />
+                A white dove from the clouds emerging<br />
+                Sings me to eternal peace
             </p>
 
             <br /><br /><br />
