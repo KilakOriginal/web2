@@ -9,7 +9,7 @@ export function Poetry() {
             <br /><br /><br />
             <h3 className="text-3xl mb-4" style={{ textAlign: "left" }}>A Mariner's Farewell</h3>
             <p className="mb-6">
-                My frame upon this stony beach<br />
+                She placed me on this stony beach<br />
                 Where blades of oceanic steel<br />
                 Cut deep into my tender flesh<br />
                 Releasing streams of crimson nectar<br />
