@@ -8,8 +8,7 @@ export function Home() {
         <div className="p-10">
             {ProfileCard(
                 <p>Hello and welcome to my website! I'm Malik—a computer science student
-                  and musician from Kronshagen and the co-founder of the
-                  <a href="https://die-mint.party/">MINT-Party</a>. If you’d like to
+                  and musician from Kronshagen. If you’d like to
                   support my work, please consider making a small donation by clicking
                   <a href="https://www.paypal.com/paypalme/MalikAbdoulHamidou/">this link</a>.
                 </p>,
@@ -21,19 +20,17 @@ export function Home() {
             <div className="newspaper">
                 <h1 className="text-3xl mb-2">Music</h1>
                 <p className="mb-6">
-                  I'm a guitarist, singer, and pianist with a love for songwriting and
+                  I'm a guitarist, singer, and pianist (in that order) with a love for songwriting and
                   reinterpreting the works of artists like Leonard Cohen, Bob Dylan, 
                   Bert Jansch, Frank Sinatra, Elvis Presley, and many more. I explore 
-                  a wide range of styles—from rock and pop to blues and jazz. I’m 
+                  a wide range of styles—from rock, pop, folk, blues, jazz... I’m 
                   always up for collaborating with fellow musicians or performing live.
                   <br /><br />
                   Over the years, I've played at local venues and outdoor events making
-                  some great memories along the way. My music, be it original songs or covers,
-                  is my way of connecting with others and expressing the emotions that words
-                  alone can't capture.
+                  some great friends along the way. My music, be it original songs or covers,
+                  is my way of connecting with others and exploring my emotions.
                   <br /><br />
-                  It's a huge part of who I am, and I love connecting with others who share 
-                  that passion. If you're interested in working together, exchanging ideas, 
+                  If you share that same passion and are interested in working together, exchanging ideas, 
                   or just want to chat about music, feel free to reach out!
                   <a href="mailto:malik@abdoulhamidou.com" className="ml-2 text-blue-600 underline"><FontAwesomeIcon icon={faEnvelope} /> malik@abdoulhamidou.com</a>
                 </p>
@@ -41,13 +38,13 @@ export function Home() {
 
                 <h1 className="text-3xl mb-2">Photography</h1>
                 <p className="mb-6">
-                  If you know me, you probably know I love photography. Capturing moments, 
-                  emotions, and the beauty of the world around us is one thing and if you 
-                  need an event or portrait photographer, I'd be happy to help out! However,
+                  If you know me, you probably know I love photography. Capturing the beauty
+                  of the world around us in each of its many colourful facets is a beautiful thing. If you 
+                  need an event or portrait photographer, I'd be happy to help out as well! However,
                   creating art through my camera is what truly drives me.
                   <br /><br />
                   I enjoy experimenting with different compositions, lighting, and 
-                  perspectives to tell stories instead of just taking pictures. 
+                  perspectives to tell stories. 
                   If you're interested in discussing photography, collaborating on projects, 
                   or just need someone to go around and create art with, please don't 
                   hesitate to reach out!
